@@ -12,6 +12,26 @@ function toggleTheme() {
   }
 }
 
+// Formspree 폼 비동기 제출
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' }
+    });
+    if (res.ok) {
+      form.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    }
+  });
+});
+
 // 저장된 테마 적용
 (function () {
   const saved = localStorage.getItem('theme');

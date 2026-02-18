@@ -39,3 +39,58 @@ button {
   float: right;
   font-size: 15px;
 }
+
+/* 제휴 문의 폼 */
+.contact-section {
+  max-width: 540px;
+  margin: 60px auto 0;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, background-color 0.3s, color 0.3s;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #888;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.success-msg {
+  margin-top: 16px;
+  color: #4caf50;
+  font-size: 15px;
+}
