@@ -1,1 +1,41 @@
-/* Add styles here */
+/* Light mode (기본) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --btn-bg: #eeeeee;
+  --btn-color: #111111;
+  --btn-border: #cccccc;
+}
+
+/* Dark mode */
+body.dark {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --btn-bg: #333333;
+  --btn-color: #f0f0f0;
+  --btn-border: #555555;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+button {
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border: 1px solid var(--btn-border);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle {
+  float: right;
+  font-size: 15px;
+}
