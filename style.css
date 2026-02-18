@@ -94,3 +94,14 @@ button {
   color: #4caf50;
   font-size: 15px;
 }
+
+/* Disqus 댓글 */
+.disqus-section {
+  max-width: 540px;
+  margin: 60px auto 60px;
+}
+
+.disqus-section h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
